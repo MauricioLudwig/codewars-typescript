@@ -1,2 +1,6 @@
-export const isPangram = (phrase: string): boolean =>
-  'abcdefghijklmnopqrstuvwxyz'.split('').every((o) => phrase.includes(o));
+export const isPangram = (phrase: string): boolean => {
+  const phraseLower = phrase.toLowerCase();
+  return 'abcdefghijklmnopqrstuvwxyz'
+    .split('')
+    .every((o) => phraseLower.includes(o));
+};

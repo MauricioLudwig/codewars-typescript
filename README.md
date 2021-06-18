@@ -11,7 +11,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 ## Katas
 
 ### [5 kyu](https://github.com/MauricioLudwig/codewars/tree/master/5%20kyu)
-* [Sum of pairs](https://github.com/MauricioLudwig/codewars/tree/master/5%20kyu)
+* [Sum of pairs](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/sum-of-pairs.ts)
 ### [6 kyu](https://github.com/MauricioLudwig/codewars/tree/master/6%20kyu)
 * [Detect pangram](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/detect-pangram.ts)
 ### [7 kyu](https://github.com/MauricioLudwig/codewars/tree/master/7%20kyu)

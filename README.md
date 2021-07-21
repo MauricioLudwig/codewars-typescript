@@ -22,3 +22,4 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 ### [7 kyu](https://github.com/MauricioLudwig/codewars/tree/master/7%20kyu)
 * [Descending order](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/descending-order.ts)
 * [Highest and lowest](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/highest-and-lowest.ts)
+* [Moves in squared strings (I)](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/moves-in-squared-strings-1.ts)

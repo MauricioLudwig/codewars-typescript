@@ -23,5 +23,6 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Descending order](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/descending-order.ts)
 * [Highest and lowest](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/highest-and-lowest.ts)
 * [Moves in squared strings (I)](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/moves-in-squared-strings-1.ts)
+* [Regex validate pin code](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/regex-validate-pin-code.ts)
 ### [8 kyu](https://github.com/MauricioLudwig/codewars/tree/master/8%20kyu)
 * [Reversed words](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/reversed-words.ts)

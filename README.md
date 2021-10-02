@@ -19,6 +19,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Detect pangram](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/detect-pangram.ts)
 * [String transformer](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/string-transformer.ts)
 * [Meeting](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/meeting.ts)
+* [Stop spinning my words](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/stop-spinning-my-words.ts)
 ### [7 kyu](https://github.com/MauricioLudwig/codewars/tree/master/7%20kyu)
 * [Descending order](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/descending-order.ts)
 * [Highest and lowest](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/highest-and-lowest.ts)

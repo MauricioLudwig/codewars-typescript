@@ -11,6 +11,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 ## Katas
 
 ### [4 kyu](https://github.com/MauricioLudwig/codewars/tree/master/4%20kyu)
+* [Strings Mix](https://github.com/MauricioLudwig/codewars/blob/master/4%20kyu/strings-mix.ts)
 * [Sum of intervals](https://github.com/MauricioLudwig/codewars/blob/master/4%20kyu/sum-of-intervals.ts)
 ### [5 kyu](https://github.com/MauricioLudwig/codewars/tree/master/5%20kyu)
 * [Sum of pairs](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/sum-of-pairs.ts)

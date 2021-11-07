@@ -30,3 +30,4 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Reversed words](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/reversed-words.ts)
 * [Get the mean of an array](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/get-the-mean-of-an-array.ts)
 * [Is n divisible by x and y?](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/is-n-divisible-by-x-and-y.ts)
+* [Opposites Attract](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/opposites-attract.ts)

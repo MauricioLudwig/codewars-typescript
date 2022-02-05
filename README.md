@@ -19,6 +19,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Perimeter of squares in a rectangle](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/perimeter-of-squares-in-a-rectangle.ts)
 ### [6 kyu](https://github.com/MauricioLudwig/codewars/tree/master/6%20kyu)
 * [Detect pangram](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/detect-pangram.ts)
+    * [Reference](https://en.wikipedia.org/wiki/Josephus_problem)
 * [String transformer](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/string-transformer.ts)
 * [Meeting](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/meeting.ts)
 * [Stop spinning my words](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/stop-spinning-my-words.ts)

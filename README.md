@@ -16,6 +16,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 ### [5 kyu](https://github.com/MauricioLudwig/codewars/tree/master/5%20kyu)
 * [Josephus Permutation](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/josephus-permutation.ts)
     * [Reference](https://en.wikipedia.org/wiki/Josephus_problem)
+* [Josephus Survivor](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/josephus-survivor.ts)
 * [Sum of pairs](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/sum-of-pairs.ts)
 * [Perimeter of squares in a rectangle](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/perimeter-of-squares-in-a-rectangle.ts)
 ### [6 kyu](https://github.com/MauricioLudwig/codewars/tree/master/6%20kyu)

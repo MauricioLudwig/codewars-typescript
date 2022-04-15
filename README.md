@@ -32,6 +32,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Moves in squared strings (I)](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/moves-in-squared-strings-1.ts)
 * [Regex validate pin code](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/regex-validate-pin-code.ts)
 ### [8 kyu](https://github.com/MauricioLudwig/codewars/tree/master/8%20kyu)
+* [Grasshopper - Summation](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/grasshopper-summation.ts)
 * [Reversed words](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/reversed-words.ts)
 * [Get the mean of an array](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/get-the-mean-of-an-array.ts)
 * [Is n divisible by x and y?](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/is-n-divisible-by-x-and-y.ts)

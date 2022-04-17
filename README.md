@@ -20,6 +20,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Sum of pairs](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/sum-of-pairs.ts)
 * [Perimeter of squares in a rectangle](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/perimeter-of-squares-in-a-rectangle.ts)
 ### [6 kyu](https://github.com/MauricioLudwig/codewars/tree/master/6%20kyu)
+* [Your order, please](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/your-order-please.ts)
 * [Mexican Wave](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/mexican-wave.ts)
 * [Detect pangram](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/detect-pangram.ts)
 * [String transformer](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/string-transformer.ts)

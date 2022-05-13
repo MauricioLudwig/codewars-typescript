@@ -29,6 +29,7 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Meeting](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/meeting.ts)
 * [Stop spinning my words](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/stop-spinning-my-words.ts)
 ### [7 kyu](https://github.com/MauricioLudwig/codewars/tree/master/7%20kyu)
+* [Mumbling](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/mumbling.ts)
 * [Square Every Digit](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/square-every-digit.ts)
 * [Descending order](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/descending-order.ts)
 * [Highest and lowest](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/highest-and-lowest.ts)

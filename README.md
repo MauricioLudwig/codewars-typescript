@@ -14,6 +14,8 @@ A collection of solutions to katas undertaken on Codewars with the intent to bec
 * [Strings Mix](https://github.com/MauricioLudwig/codewars/blob/master/4%20kyu/strings-mix.ts)
 * [Sum of intervals](https://github.com/MauricioLudwig/codewars/blob/master/4%20kyu/sum-of-intervals.ts)
 ### [5 kyu](https://github.com/MauricioLudwig/codewars/tree/master/5%20kyu)
+* [Snakes and Ladders](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/snakes-and-ladders.ts)
+    * [Reference](https://en.wikipedia.org/wiki/Snakes_and_ladders)
 * [Traffic Lights - multiple cars](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/traffic-lights-multiple-cars.ts)
 * [Josephus Permutation](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/josephus-permutation.ts)
     * [Reference](https://en.wikipedia.org/wiki/Josephus_problem)

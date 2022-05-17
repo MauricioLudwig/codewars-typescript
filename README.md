@@ -1,5 +1,7 @@
 # Codewars
 
+[![CI](https://github.com/MauricioLudwig/codewars/actions/workflows/ci.yml/badge.svg)](https://github.com/MauricioLudwig/codewars/actions/workflows/ci.yml)
+
 "Achieve code mastery through challenge"
 
 ## About

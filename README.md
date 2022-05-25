@@ -32,7 +32,7 @@ Additionally, the test files provide a cohesive code coverage which is then eval
 
 ### Practice & Elevation
 
-Not only do I get to practice (and repeat quite frequently) long established coding practices in TypeScript/JavaScript but the Katas allow, in certain instances, for me to learn something new, for instance the many utility types offered in TypeScript (some which may find little leverage in production applications).
+Not only do I get to practice (and repeat quite frequently) long established coding practices in TypeScript/JavaScript but the Katas allow, in certain instances, for me to learn something new, for instance the many utility types offered in TypeScript (some which may otherwise find little leverage in production applications).
 
 ### Learn new languages
 

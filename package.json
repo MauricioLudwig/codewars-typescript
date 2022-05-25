@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node app.ts",
-    "dev": "tsnd --respawn app.ts",
     "test": "npx jest",
     "test:watch": "npx jest --watch"
   },

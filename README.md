@@ -2,47 +2,38 @@
 
 [![CI](https://github.com/MauricioLudwig/codewars/actions/workflows/ci.yml/badge.svg)](https://github.com/MauricioLudwig/codewars/actions/workflows/ci.yml)
 
-"Achieve code mastery through challenge"
-
-## About
-
-A collection of solutions to katas undertaken on Codewars with the intent to become better at algorithms and data structures as well as delve deeper into techologies both old and new.  
-
 ![](https://www.codewars.com/users/MauricioLudwig/badges/large)
 
-## Katas
+This is my monorepo housing my solutions for the katas presented at [Codewars](https://www.codewars.com/). Below follows a succinct summary of the motivation for said repository as well as the goal aspired in solving these problems.
 
-### [4 kyu](https://github.com/MauricioLudwig/codewars/tree/master/4%20kyu)
-* [Strings Mix](https://github.com/MauricioLudwig/codewars/blob/master/4%20kyu/strings-mix.ts)
-* [Sum of intervals](https://github.com/MauricioLudwig/codewars/blob/master/4%20kyu/sum-of-intervals.ts)
-### [5 kyu](https://github.com/MauricioLudwig/codewars/tree/master/5%20kyu)
-* [Snakes and Ladders](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/snakes-and-ladders.ts)
-    * [Reference](https://en.wikipedia.org/wiki/Snakes_and_ladders)
-* [Traffic Lights - multiple cars](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/traffic-lights-multiple-cars.ts)
-* [Josephus Permutation](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/josephus-permutation.ts)
-    * [Reference](https://en.wikipedia.org/wiki/Josephus_problem)
-* [Josephus Survivor](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/josephus-survivor.ts)
-* [Sum of pairs](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/sum-of-pairs.ts)
-* [Perimeter of squares in a rectangle](https://github.com/MauricioLudwig/codewars/blob/master/5%20kyu/perimeter-of-squares-in-a-rectangle.ts)
-### [6 kyu](https://github.com/MauricioLudwig/codewars/tree/master/6%20kyu)
-* [Find the odd int](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/find-the-odd-int.ts)
-* [Your order, please](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/your-order-please.ts)
-* [Mexican Wave](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/mexican-wave.ts)
-* [Detect pangram](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/detect-pangram.ts)
-* [String transformer](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/string-transformer.ts)
-* [Meeting](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/meeting.ts)
-* [Stop spinning my words](https://github.com/MauricioLudwig/codewars/blob/master/6%20kyu/stop-spinning-my-words.ts)
-### [7 kyu](https://github.com/MauricioLudwig/codewars/tree/master/7%20kyu)
-* [Mumbling](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/mumbling.ts)
-* [Square Every Digit](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/square-every-digit.ts)
-* [Descending order](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/descending-order.ts)
-* [Highest and lowest](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/highest-and-lowest.ts)
-* [Moves in squared strings (I)](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/moves-in-squared-strings-1.ts)
-* [Regex validate pin code](https://github.com/MauricioLudwig/codewars/blob/master/7%20kyu/regex-validate-pin-code.ts)
-### [8 kyu](https://github.com/MauricioLudwig/codewars/tree/master/8%20kyu)
-* [Even or Odd](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/even-or-odd.ts)
-* [Grasshopper - Summation](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/grasshopper-summation.ts)
-* [Reversed words](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/reversed-words.ts)
-* [Get the mean of an array](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/get-the-mean-of-an-array.ts)
-* [Is n divisible by x and y?](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/is-n-divisible-by-x-and-y.ts)
-* [Opposites Attract](https://github.com/MauricioLudwig/codewars/blob/master/8%20kyu/opposites-attract.ts)
+## Getting Started
+
+There are only two scripts associated with this project:
+
+```
+npm run test
+npm run test:watch
+```
+
+A single GitHub action is set up which runs the first script (npm run test) whenever a new commit is added to the repository.
+
+Useful extensions (whilst using Visual Studio Code)
+* [Jest Snippets](https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets)
+* [Jest Test Explorer](https://marketplace.visualstudio.com/items?itemName=kavod-io.vscode-jest-test-adapter)
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Motivation
+
+### TDD
+
+Although not required in the submission of solutions, I make it an effort (or rather a requirement on my own behalf) to write a test file for each kata, wherein the test file itself is always written ahead of the functionality of said solution. This in order to adhere to the principles of test-driven development. Also it allows me to practice and test out the different assertions offered by the given testing library.
+
+Additionally, the test files provide a cohesive code coverage which is then evaluated in the pipeline set up for this project whenever a new commit is merged to the repository.
+
+### Practice & Elevation
+
+Not only do I get to practice (and repeat quite frequently) long established coding practices in TypeScript/JavaScript but the Katas allow, in certain instances, for me to learn something new, for instance the many utility types offered in TypeScript (some which may find little leverage in production applications).
+
+### Learn new languages
+
+My predisposition towards TypeScript has thus far not yielded much in favor of new languages although this is something I wish to explore at some point in the future.

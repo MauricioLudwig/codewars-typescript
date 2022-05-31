@@ -1,0 +1,26 @@
+name: Update README
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+      - run: npm install
+      - name: Update README
+        run: npm run update:readme
+      - name: Commit and push update
+        run: |
+          git config user.name Mauricio Ludwig
+          git config user.email mrdamiengallagher@gmail.com
+          git add .
+          git commit -m "update readme"
+          git push

@@ -14,7 +14,7 @@ const getKatasByKyu = async (kyu: number): Promise<number> => {
   }
 
   const files = await fs.promises.readdir(directory);
-  return files.filter((file) => !/\.test/.test(file)).length;
+  return files.filter((file) => /^([a-z1-9\-])+\.(t|j)s$/.test(file)).length;
 };
 
 const getVars = (katas: Array<TGroup>): [string, string, number] => {

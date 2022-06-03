@@ -10,17 +10,17 @@
 |2|0|
 |3|0|
 |4|2|
-|5|9|
+|5|8|
 |6|19|
 |7|11|
 |8|11|
-|All|52|
+|All|51|
 
 ```mermaid
 pie showData
     title Katas per Kyu (0 omitted)
 	"Kyu 4": 2
-	"Kyu 5": 9
+	"Kyu 5": 8
 	"Kyu 6": 19
 	"Kyu 7": 11
 	"Kyu 8": 11

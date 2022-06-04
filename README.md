@@ -30,20 +30,14 @@ This is my monorepo housing my solutions for the katas presented at [Codewars](h
 
 ## Getting Started
 
-Scripts
+There are only two scripts associated with this project:
 
 ```
 npm run test
 npm run test:watch
-npm run update:readme
 ```
 
-Github Actions
-
-```
-CI (triggers the test suites when adding commit or merging to master)
-Update README (triggers script to update the readme file with the kata statistics illustrated in the table & pie chart above)
-```
+A single GitHub action is set up which runs the first script (npm run test) whenever a new commit is added to the repository.
 
 Useful extensions (whilst using Visual Studio Code)
 * [Jest Snippets](https://marketplace.visualstudio.com/items?itemName=andys8.jest-snippets)

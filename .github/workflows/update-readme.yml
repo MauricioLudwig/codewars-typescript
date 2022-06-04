@@ -21,6 +21,6 @@ jobs:
         run: |
           git config user.name Mauricio Ludwig
           git config user.email mrdamiengallagher@gmail.com
-          git add .
-          git commit -m "update readme"
+          git add README.md
+          git commit -m "update readme" || exit 0
           git push

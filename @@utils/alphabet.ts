@@ -1,7 +1,9 @@
 export const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
+export const alphabetArr = alphabet.split('');
+
 export const alphabetMap = (offset = 0): Record<string, number> =>
-  alphabet.split('').reduce(
+  alphabetArr.reduce(
     (acc, curr, index) => ({
       ...acc,
       [curr]: index + offset,

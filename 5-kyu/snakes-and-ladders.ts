@@ -1,11 +1,10 @@
+import { assertIsDefined } from '../@@utils/assertions';
 import { tunnels } from './snakes-and-ladders.data';
 
 export class SnakesLadders {
   player1 = 0;
   player2 = 0;
   currentTurn = 0; // 0 (player 1), 1 (player 2)
-
-  constructor() {}
 
   play(die1: number, die2: number): string {
     if (this.hasExistingWinner()) {
@@ -49,7 +48,8 @@ export class SnakesLadders {
   }
 
   private getNextSquare(die1: number, die2: number): number {
-    const current = [this.player1, this.player2][this.currentTurn]!;
+    const current = [this.player1, this.player2][this.currentTurn];
+    assertIsDefined(current);
     return current + die1 + die2;
   }
 

@@ -1,20 +1,24 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 type TGroup = Record<string, number>;
 
 type TFrequency = {
   key: string;
   symbol: string;
-  occurence: number;
+  occurrence: number;
 };
 
 export class G964 {
   public static mix = (s1: string, s2: string) => {
-    const [s1Dict, s2Dict] = [s1, s2].map((s) => G964.getLetterOccurences(s));
-    G964.appendMissingLetters(s1Dict!, s2Dict!);
-    const s = G964.getCombinedOccurences(s1Dict!, s2Dict!);
+    const [s1Dict, s2Dict] = [s1, s2].map((s) => G964.getLetterOccurrences(s));
+    assertIsDefined(s1Dict);
+    assertIsDefined(s2Dict);
+    G964.appendMissingLetters(s1Dict, s2Dict);
+    const s = G964.getCombinedOccurrences(s1Dict, s2Dict);
     return G964.construct(G964.sort(s));
   };
 
-  static getLetterOccurences(s: string): TGroup {
+  static getLetterOccurrences(s: string): TGroup {
     const parsedS = s
       .split('')
       .filter((o) => /[a-z]/.test(o))
@@ -24,13 +28,14 @@ export class G964 {
     const dict: TGroup = {};
 
     for (let i = 0; i < parsedS.length; i++) {
-      const c = parsedS[i]!;
+      const c = parsedS[i];
+      assertIsDefined(c);
 
       if (this.includes(attempted, c)) {
         continue;
       }
 
-      const occurences = parsedS
+      const occurrences = parsedS
         .split('')
         .reduce((acc, curr, index): number => {
           if (index === i) {
@@ -46,7 +51,7 @@ export class G964 {
 
       attempted.push(c);
 
-      dict[c] = occurences;
+      dict[c] = occurrences;
     }
 
     return dict;
@@ -60,16 +65,18 @@ export class G964 {
     });
   }
 
-  static getCombinedOccurences(s1: TGroup, s2: TGroup): Array<TFrequency> {
+  static getCombinedOccurrences(s1: TGroup, s2: TGroup): Array<TFrequency> {
     const frequencies: TFrequency[] = [];
     const keys = Object.keys(s1);
 
     for (let i = 0; i < keys.length; i++) {
-      const key = keys[i]!;
-      const n1 = s1[key]!;
-      const n2 = s2[key] || 0;
+      const key = keys[i];
+      assertIsDefined(key);
+      const n1 = s1[key];
+      assertIsDefined(n1);
+      const n2 = s2[key] ?? 0;
 
-      if ([n1, n2].every((o) => o! <= 1)) {
+      if ([n1, n2].every((o) => o <= 1)) {
         continue;
       }
 
@@ -90,7 +97,7 @@ export class G964 {
       frequencies.push({
         key: k,
         symbol: key,
-        occurence: v,
+        occurrence: v
       });
     }
 
@@ -99,9 +106,9 @@ export class G964 {
 
   static sort(s: TFrequency[]): TFrequency[] {
     return s.sort((a, b) => {
-      if (a.occurence > b.occurence) {
+      if (a.occurrence > b.occurrence) {
         return -1;
-      } else if (b.occurence > a.occurence) {
+      } else if (b.occurrence > a.occurrence) {
         return 1;
       }
 
@@ -126,10 +133,10 @@ export class G964 {
 
   static construct(s: TFrequency[]): string {
     return s
-      .filter((o) => o.occurence > 1)
+      .filter((o) => o.occurrence > 1)
       .map((o) => {
-        const seq = Array.from(Array(o.occurence))
-          .map((_) => o.symbol)
+        const seq = Array.from(Array(o.occurrence))
+          .map(() => o.symbol)
           .join('');
         return `${o.key}:${seq}`;
       })

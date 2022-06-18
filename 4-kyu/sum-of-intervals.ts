@@ -1,6 +1,6 @@
 export const sumOfIntervals = (intervals: [number, number][]): number => {
   const overlappingIntervals: [number, number][] = [];
-  let sortedIntervals = intervals.sort((a, b) => {
+  const sortedIntervals = intervals.sort((a, b) => {
     const [a1, a2] = a;
     const [b1, b2] = b;
 
@@ -26,7 +26,7 @@ export const sumOfIntervals = (intervals: [number, number][]): number => {
     }
 
     const [i1, i2] = interval;
-    let low = i1;
+    const low = i1;
     let high = i2;
     const copy = [...sortedIntervals];
 

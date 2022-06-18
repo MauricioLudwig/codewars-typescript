@@ -14,12 +14,12 @@ const getKatasByKyu = async (kyu: number): Promise<number> => {
   }
 
   const files = await fs.promises.readdir(directory);
-  return files.filter((file) => /^([a-z0-9\-])+\.(t|j)s$/.test(file)).length;
+  return files.filter((file) => /^([a-z0-9-])+\.(t|j)s$/.test(file)).length;
 };
 
 const getVars = (katas: Array<TGroup>): [string, string, number] => {
-  let KATAS_TABLE: string[] = [];
-  let KATAS_PIE: string[] = [];
+  const KATAS_TABLE: string[] = [];
+  const KATAS_PIE: string[] = [];
   let TOTAL = 0;
 
   katas.forEach(({ kyu, count }) => {
@@ -43,7 +43,7 @@ const getVars = (katas: Array<TGroup>): [string, string, number] => {
     const katas: Array<TGroup> = await Promise.all(
       kyus.map(async (kyu) => ({
         kyu,
-        count: await getKatasByKyu(kyu),
+        count: await getKatasByKyu(kyu)
       }))
     );
 
@@ -54,7 +54,7 @@ const getVars = (katas: Array<TGroup>): [string, string, number] => {
     const output = Mustache.render(data.toString(), {
       KATAS_TABLE,
       KATAS_PIE,
-      TOTAL,
+      TOTAL
     });
 
     await fs.promises.writeFile('README.md', output);

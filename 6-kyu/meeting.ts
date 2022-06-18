@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 type TName = {
   format: string;
   firstName: string;
@@ -11,10 +13,12 @@ export const meeting = (s: string): string => {
     .map((name) => {
       const [firstName, lastName] = name.split(':');
       const format = `(${[lastName, firstName].join(', ')})`;
+      assertIsDefined(firstName);
+      assertIsDefined(lastName);
       return {
         format,
-        firstName: firstName!,
-        lastName: lastName!,
+        firstName,
+        lastName
       };
     })
     .sort(sortByNames);

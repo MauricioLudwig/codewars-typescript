@@ -1,8 +1,10 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 export const mazeRunner = (maze: number[][], directions: string[]): string => {
   let [y, x] = getStartingLocation(maze);
 
   for (let i = 0; i < directions.length; i++) {
-    const direction = directions[i]!;
+    const direction = directions[i];
 
     switch (direction) {
       case 'N':
@@ -42,8 +44,10 @@ export const mazeRunner = (maze: number[][], directions: string[]): string => {
 
 const getStartingLocation = (maze: number[][]): [number, number] => {
   for (let y = 0; y < maze.length; y++) {
-    for (let x = 0; x < maze[y]!.length; x++) {
-      if (maze[y]![x]! === 2) {
+    const yRow = maze[y];
+    assertIsDefined(yRow);
+    for (let x = 0; x < yRow.length; x++) {
+      if (yRow[x] === 2) {
         return [y, x];
       }
     }

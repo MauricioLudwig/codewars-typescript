@@ -7,7 +7,7 @@
     "test": "npx jest",
     "test:watch": "npx jest --watch",
     "update:readme": "ts-node update-readme.ts",
-    "lint": "eslint . --ext .js,.ts"
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
 export const high = (str: string): string => {
@@ -10,11 +12,12 @@ export const high = (str: string): string => {
 
       return {
         word: o,
-        score,
+        score
       };
     })
     .sort((a, b) => b.score - a.score);
 
   const [maxScore] = scores;
-  return maxScore?.word!;
+  assertIsDefined(maxScore);
+  return maxScore.word;
 };

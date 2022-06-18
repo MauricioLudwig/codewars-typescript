@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 const scores: Record<string, number> = {
   wild: 10,
   star: 9,
@@ -8,12 +10,13 @@ const scores: Record<string, number> = {
   bar: 4,
   king: 3,
   queen: 2,
-  jack: 1,
+  jack: 1
 };
 
 export const fruit = (reels: string[][], spins: number[]): number => {
   const draws = reels.map((reel, i) => {
-    const spin = spins[i]!;
+    const spin = spins[i];
+    assertIsDefined(spin);
     return reel[spin];
   });
 
@@ -24,15 +27,22 @@ export const fruit = (reels: string[][], spins: number[]): number => {
   }
 
   if (count === 1) {
-    const draw = draws[0]!.toLowerCase();
-    return scores[draw]! * 10;
+    const draw = draws[0]?.toLowerCase();
+    assertIsDefined(draw);
+    const el = scores[draw];
+    assertIsDefined(el);
+    return el * 10;
   }
 
   const [item] = draws.filter((d1, i1) =>
     draws.some((d2, i2) => d1 === d2 && i1 !== i2)
   );
 
-  const baseScore = scores[item!.toLowerCase()]!;
+  assertIsDefined(item);
+
+  const baseScore = scores[item.toLowerCase()];
+
+  assertIsDefined(baseScore);
 
   if (item === 'Wild') {
     return baseScore;

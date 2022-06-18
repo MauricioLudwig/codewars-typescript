@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 export const josephus = <T>(items: T[], k: number): T[] => {
   const sequence = [...items];
   const permutation = new Array<T>();
@@ -11,12 +13,9 @@ export const josephus = <T>(items: T[], k: number): T[] => {
     }
 
     const [item] = sequence.splice(index, 1);
+    assertIsDefined(item);
 
-    if (typeof item === undefined) {
-      throw new Error('Spliced item was undefined');
-    }
-
-    permutation.push(item!);
+    permutation.push(item);
   }
 
   return permutation;

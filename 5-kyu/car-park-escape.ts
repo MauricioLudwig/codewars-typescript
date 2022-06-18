@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 export const escape = (carpark: number[][]): string[] => {
   if (carpark.length === 1) {
     return [];
@@ -7,9 +9,11 @@ export const escape = (carpark: number[][]): string[] => {
   let startingLevel = 0;
 
   for (let i = 0; i < carpark.length; i++) {
-    if (carpark[i]!.includes(2)) {
+    const level = carpark[i];
+
+    if (level?.includes(2)) {
       startingLevel = i;
-      currentPosition = findIndexByElement(carpark[i]!, 2);
+      currentPosition = findIndexByElement(level, 2);
       break;
     }
   }
@@ -17,7 +21,8 @@ export const escape = (carpark: number[][]): string[] => {
   const directions: string[] = [];
 
   for (let i = startingLevel; i < carpark.length; ) {
-    const level = carpark[i]!;
+    const level = carpark[i];
+    assertIsDefined(level);
     const staircase = findIndexByElement(level, 1);
 
     if (staircase === -1) {
@@ -38,7 +43,9 @@ export const escape = (carpark: number[][]): string[] => {
     let descendNrOfFloors = 1;
 
     while (true) {
-      const nextFloor = findIndexByElement(carpark[i + descendNrOfFloors]!, 1);
+      const level = carpark[i + descendNrOfFloors];
+      assertIsDefined(level);
+      const nextFloor = findIndexByElement(level, 1);
 
       if (nextFloor === -1 || staircase !== nextFloor) {
         break;

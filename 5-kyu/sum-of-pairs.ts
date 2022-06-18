@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 export const sumPairs = (
   numbers: number[],
   num: number
@@ -8,7 +10,8 @@ export const sumPairs = (
   const checkedNumbers: number[] = [];
 
   for (let i = 0; i < maxIndex; i++) {
-    const currentNum = numbers[i]!;
+    const currentNum = numbers[i];
+    assertIsDefined(currentNum);
 
     if (checkedNumbers.includes(currentNum)) {
       continue;

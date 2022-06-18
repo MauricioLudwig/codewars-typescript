@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 export class Kata {
   static highAndLow(numbers: string): string {
     const orderedNumbers = numbers
@@ -8,6 +10,9 @@ export class Kata {
     const [low] = orderedNumbers;
     const [high] = orderedNumbers.slice(-1);
 
-    return [high!, low!].join(' ');
+    assertIsDefined(high);
+    assertIsDefined(low);
+
+    return [high, low].join(' ');
   }
 }

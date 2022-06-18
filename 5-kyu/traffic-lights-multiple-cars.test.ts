@@ -1,3 +1,4 @@
+import { assertIsDefined } from '../@@utils/assertions';
 import { trafficLights } from './traffic-lights-multiple-cars';
 
 test('should output simulated steps', () => {
@@ -18,8 +19,11 @@ test('should output simulated steps', () => {
     '....G.C.R...',
     '....G..CR...',
     '....G..CR...',
-    '....O...C...',
+    '....O...C...'
   ];
 
-  expect(trafficLights(result[0]!, 16)).toEqual(result);
+  const row = result[0];
+  assertIsDefined(row);
+
+  expect(trafficLights(row, 16)).toEqual(result);
 });

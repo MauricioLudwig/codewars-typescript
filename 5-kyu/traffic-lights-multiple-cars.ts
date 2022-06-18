@@ -1,7 +1,9 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 const timers: Record<string, number> = {
   G: 5,
   R: 5,
-  O: 1,
+  O: 1
 };
 
 export const trafficLights = (road: string, n: number): string[] => {
@@ -10,7 +12,7 @@ export const trafficLights = (road: string, n: number): string[] => {
   const carIndices = [...nodes]
     .map((o, i) => ({
       node: o,
-      index: i,
+      index: i
     }))
     .filter((o) => o.node === 'C')
     .reverse();
@@ -19,7 +21,7 @@ export const trafficLights = (road: string, n: number): string[] => {
     .map((o, i) => ({
       node: o,
       timer: timers[o] ?? 0,
-      index: i,
+      index: i
     }))
     .filter((o) => ['G', 'R', 'O'].includes(o.node));
 
@@ -46,7 +48,9 @@ export const trafficLights = (road: string, n: number): string[] => {
             throw new Error('');
         }
 
-        o.timer = timers[o.node]!;
+        const timer = timers[o.node];
+        assertIsDefined(timer);
+        o.timer = timer;
       }
     });
 

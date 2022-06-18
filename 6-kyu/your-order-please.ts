@@ -1,3 +1,5 @@
+import { assertIsDefined } from '../@@utils/assertions';
+
 export const order = (words: string): string => {
   if (words === '') {
     return '';
@@ -13,11 +15,12 @@ export const order = (words: string): string => {
       }
 
       const [, s] = match;
-      const digit = +s!;
+      assertIsDefined(s);
+      const digit = +s;
 
       return {
         word: o,
-        order: digit,
+        order: digit
       };
     });
 

@@ -1,6 +1,7 @@
 # Codewars
 
 [![CI](https://github.com/MauricioLudwig/codewars/actions/workflows/ci.yml/badge.svg)](https://github.com/MauricioLudwig/codewars/actions/workflows/ci.yml)
+[![Linter](https://github.com/MauricioLudwig/codewars/actions/workflows/linter.yml/badge.svg)](https://github.com/MauricioLudwig/codewars/actions/workflows/linter.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ![](https://www.codewars.com/users/MauricioLudwig/badges/large)

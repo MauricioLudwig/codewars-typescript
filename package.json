@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx jest",
     "test:watch": "npx jest --watch",
-    "update:readme": "ts-node update-readme.ts",
+    "update:readme": "ts-node update-readme.ts run",
     "lint": "eslint . --ext .ts"
   },
   "repository": {

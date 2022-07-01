@@ -39,14 +39,12 @@ Scripts
 npm run test
 npm run test:watch
 npm run update:readme
-npm run lint
 ```
 
 Github Actions
 
 ```
 CI
-Lint Code Base
 Update README
 ```
 

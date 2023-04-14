@@ -4,7 +4,7 @@ export function isValidCoordinates(coordinates: string): boolean {
     .filter((o) => !o.includes('e'))
     .map(Number);
 
-  if (lat === Number.NaN || long === Number.NaN) {
+  if (isNaN(lat) || isNaN(long)) {
     return false;
   }
 

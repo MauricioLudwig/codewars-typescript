@@ -14,9 +14,9 @@
 |4|2|
 |5|11|
 |6|36|
-|7|32|
+|7|33|
 |8|29|
-|All|111|
+|All|112|
 
 ```mermaid
 pie showData
@@ -25,7 +25,7 @@ pie showData
 	"Kyu 4": 2
 	"Kyu 5": 11
 	"Kyu 6": 36
-	"Kyu 7": 32
+	"Kyu 7": 33
 	"Kyu 8": 29
 ```
 

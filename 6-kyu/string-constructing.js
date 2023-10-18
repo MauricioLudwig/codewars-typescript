@@ -4,7 +4,7 @@ export function stringConstructing(a, s) {
   const finalStr = s.split('');
   let iteration = 0;
 
-  while (true) {
+  while (finalStr.join('') !== currentStr.join('')) {
     if (currentStr.length <= finalStr.length) {
       iteration++;
       currentStr.push(...appendStr);
@@ -22,10 +22,6 @@ export function stringConstructing(a, s) {
     if (removeIndex > -1) {
       currentStr.splice(removeIndex, 1);
       iteration++;
-    }
-
-    if (finalStr.join('') === currentStr.join('')) {
-      break;
     }
   }
 

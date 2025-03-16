@@ -15,8 +15,8 @@
 |5|11|
 |6|42|
 |7|38|
-|8|31|
-|All|125|
+|8|32|
+|All|126|
 
 ```mermaid
 pie showData
@@ -26,7 +26,7 @@ pie showData
 	"Kyu 5": 11
 	"Kyu 6": 42
 	"Kyu 7": 38
-	"Kyu 8": 31
+	"Kyu 8": 32
 ```
 
 This is my monorepo housing my solutions for the katas presented at [Codewars](https://www.codewars.com/). Below follows a succinct summary of the motivation for said repository as well as the goal aspired in solving these problems.

@@ -6,7 +6,7 @@ export const pigIt = (a: string): string => {
         return o;
       }
 
-      if (/[\.\!\?]/.test(o)) {
+      if (/[.!?]/.test(o)) {
         return o;
       }
 
